@@ -27,6 +27,7 @@ const NavigationBar = () => {
         <div className='navigationBar'>
             <div className='linksContainer'>
                 <Link className='links'>Home</Link>
+                <Link className='links'>Projects</Link>
                 <Link className='links'>About</Link>
                 <Link className='links'>Contact</Link>
             </div>
