@@ -1,0 +1,44 @@
+.middleBox{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0px;
+    width: 35%;
+    height: 400px;
+    // border: 1px solid red;
+
+    #myName{
+        font-size: medium;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    
+    #description{
+        text-align: left;
+        margin-top: 0px;
+    }
+
+    #otherDescription{
+        font-size: small;
+    }
+
+    #quote{
+        font-style: italic;
+    }
+
+    #contactMeButton{
+        font-family: 'Arsenal';font-size: 22px;  
+        width: 7rem;
+        height: 2rem;
+        border: none;
+        border-radius: 2px;
+        margin-top: 10px;
+        font-size: medium;
+        font-weight: 600;
+
+        &:hover{
+            background-color: rgb(80,80,80);
+            color: white;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+        }
+    }
+}
