@@ -2,10 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #505050;
     height: 80px;
     width: 100%;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+    position: sticky;
+    top: 0;
+    transition: background-color .25s;
+    // background-color: #505050;
+    // box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+
 
     .linksContainer{
         display: flex;
