@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../images/Jerry-logo.png'
 
 //STYLES
 import './styles/navigationBar.scss';
@@ -25,6 +26,7 @@ const NavigationBar = () => {
 
     return (
         <div className='navigationBar'>
+            <img src={Logo} id='logo'/>
             <div className='linksContainer'>
                 <Link className='links'>Home</Link>
                 <Link className='links'>Projects</Link>

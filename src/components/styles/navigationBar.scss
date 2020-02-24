@@ -1,15 +1,19 @@
 .navigationBar {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 80px;
     width: 100%;
     position: sticky;
     top: 0;
     transition: background-color .25s;
-    // background-color: #505050;
-    // box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
 
+    #logo{
+        width: 80px;
+        height:80px;
+        // margin-top: 10px;
+        margin-left: 10px;
+    }
 
     .linksContainer{
         display: flex;
@@ -22,15 +26,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100%;
-            // background-color: rgb(61, 61, 61);
             width: 40%;
             color: white;
             text-decoration: none;
             font-size: 16px;
 
             &:hover{
-                color: #FFC312;
+                color: rgb(29,155,209);
+                border-bottom: 2px solid rgb(29,155,209);
+                font-weight: bold;
+                transform: scale(1.1);
             }
         }
     }
