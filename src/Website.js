@@ -5,14 +5,14 @@ import NavigationBar from './components/navigationBar';
 import Projects from './components/projects'
 
 
-function Website() {
+const Website = props => {
   return (
     <div className="Website">
       <NavigationBar />
       <div className="websiteMiddle">
         <MiddleBox />
       </div>
-        <Projects />
+        <Projects props={props}/>
     </div>
   );
 }

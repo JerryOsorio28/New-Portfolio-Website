@@ -36,11 +36,13 @@
         font-weight: 600;
         font-size: medium;
         margin-top: 15px;
+        padding-bottom: 5px;
 
         &:hover{
             background-color: rgb(29,155,209);
             color: white;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+            text-decoration: underline;
         }
     }
 }
