@@ -6,6 +6,15 @@
     height: 400px;
     // border: 1px solid red;
 
+    #myPicture{
+        position: absolute;
+        background-size: cover;
+        width: 55%;
+        z-index: 0;
+        top: 0px;
+        right: 5%;
+    }
+
     #myName{
         font-size: medium;
         text-align: left;
@@ -42,7 +51,6 @@
             background-color: rgb(29,155,209);
             color: white;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
-            text-decoration: underline;
         }
     }
 }

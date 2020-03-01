@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Logo from '../images/Jerry-logo.png'
+import { Link } from 'react-scroll';
 
 //STYLES
 import './styles/navigationBar.scss';
@@ -26,12 +27,53 @@ const NavigationBar = () => {
 
     return (
         <div className='navigationBar'>
-            <img src={Logo} id='logo'/>
+            <Link 
+                className='links'
+                activeClass='active'
+                to='home'
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+            ><img src={Logo} id='logo'/></Link>
             <div className='linksContainer'>
-                <Link className='links'>Home</Link>
-                <Link className='links'>Projects</Link>
-                <Link className='links'>About</Link>
-                <Link className='links'>Contact</Link>
+                <Link 
+                    className='links'
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-150}
+                    duration={500}
+                    // onClick={}
+                >Home</Link>
+                <Link 
+                    className='links'
+                    activeClass='active'
+                    to='projectsTitle'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500} 
+                >Projects</Link>
+                <Link 
+                    className='links'
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500} 
+                >About</Link>
+                <Link 
+                    className='links'
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500} 
+                >Contact</Link>
             </div>
         </div>
     )

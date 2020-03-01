@@ -2,16 +2,17 @@
     font-size: 100px;
     color: rgb(80,80,80);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+    z-index: 1;
 }
 
 #projectsContainer{
     display: flex;
     flex-direction: row;
-    // align-items: center;
     box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.349);
     width: 100%;
     height: 100%;
     background-color: rgb(80,80,80);
+    z-index: 1;
     
     .projectsSections{
         display: flex;

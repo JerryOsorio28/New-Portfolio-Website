@@ -7,12 +7,16 @@
     position: sticky;
     top: 0;
     transition: background-color .25s;
+    z-index: 1;
 
     #logo{
         width: 80px;
         height:80px;
-        // margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 30px;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .linksContainer{
@@ -36,6 +40,7 @@
                 border-bottom: 2px solid rgb(29,155,209);
                 font-weight: bold;
                 transform: scale(1.1);
+                cursor: pointer;
             }
         }
     }
