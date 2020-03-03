@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import Logo from '../images/Jerry-logo.png'
 import { Link } from 'react-scroll';
 
@@ -12,6 +11,7 @@ const NavigationBar = () => {
     // as well as setting back everything to it's originality when scroll is back at the top.
     const scrollEffect = () => {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+            console.log('working?')
             let navBar = document.getElementsByClassName('navigationBar')[0]
             navBar.style.backgroundColor = "#505050"
             navBar.style.boxShadow = '1px 1px 5px rgba(0, 0, 0, 0.349)'

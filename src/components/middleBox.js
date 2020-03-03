@@ -1,8 +1,23 @@
 import React from 'react';
 import './styles/middleBox.scss'
-import MyPicture from '../images/portfolio-picture.png'
 
 const MiddleBox = () => {
+    
+    setTimeout(() => {
+        let description = document.getElementById('description')
+        description.style.visibility = 'visible'
+    }, 1200)
+
+    setTimeout(() => {
+        let otherDescription = document.getElementById('otherDescription')
+        otherDescription.style.visibility = 'visible'
+    }, 2200)
+
+    setTimeout(() => {
+        let button = document.getElementById('contactMeButton')
+        button.style.visibility = 'visible'
+    }, 3200)
+
     return (
         <div className='middleBox' id='home'>
             <h3 id='myName'>My name is Jerry Osorio Pagan</h3>
@@ -13,7 +28,6 @@ const MiddleBox = () => {
                 <p id='quote'>“First, solve the problem. Then, write the code.”</p>
             </p>
             <button id='contactMeButton'>Contact me</button>
-            <img src={MyPicture} id='myPicture'/>
         </div>
     )
 }

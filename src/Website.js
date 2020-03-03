@@ -1,12 +1,15 @@
 import React from 'react';
-import './Website.scss';
 import MiddleBox from './components/middleBox'
 import NavigationBar from './components/navigationBar';
 import Projects from './components/projects'
-// import ContactForm from './components/contact';
+import MyPicture from '../src/images/portfolio-picture.png'
+
+//STYLES
+import './Website.scss';
 
 
 const Website = props => {
+
   return (
     <div className="Website">
       <NavigationBar />
@@ -14,7 +17,7 @@ const Website = props => {
         <MiddleBox />
       </div>
         <Projects props={props}/>
-        {/* <ContactForm /> */}
+        <img src={MyPicture} id='myPicture'/>
     </div>
   );
 }
