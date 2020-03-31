@@ -17,7 +17,7 @@ const Projects = props => {
                     <h3 className='projectTitle'>RV Way</h3>
                     <p className='projectDescription'>
                         An app meant to take safely RV families to their destination,  generating optimized routes with data that takes into consideration the vehicle's height for low clearances, weight, width, length and more. 
-                        The project had a deadline o f 2 months, my contribution was in the front end team.
+                        The project had a deadline of 2 months, my contribution was in the front end team.
                     </p>
                 </section>
                 <section className='projectsSections'>
@@ -26,10 +26,11 @@ const Projects = props => {
                     </a>
                     <h3 className='projectTitle'>Amiibo's Web App</h3>
                     <p className='projectDescription'>
-                        A simple app that displays in a beautiful way the collection's of Amiibos up until today's date. 
+                    A simple app that displays elegantly the collection of Amiibos up until today's
+                    date! The backend is handled by a public API, the entirety of the project was made by me and it includes images, music, and
+                    animations.
                     </p>
                 </section>
-                {/* <section className='projectsSections'>Project 3</section> */}
             </div>
         </>
     )

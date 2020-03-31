@@ -14,10 +14,10 @@ const MiddleBox = () => {
         otherDescription.style.visibility = 'visible'
     }, 2400)
 
-    setTimeout(() => {
-        let button = document.getElementById('contactMeButton')
-        button.style.visibility = 'visible'
-    }, 3400)
+    // setTimeout(() => {
+    //     let button = document.getElementById('contactMeButton')
+    //     button.style.visibility = 'visible'
+    // }, 3400)
 
     return (
         <div className='middleBox' id='home'>
@@ -28,7 +28,7 @@ const MiddleBox = () => {
             there is this satisfying and unique feeling in, creating out of nothing, something that can solve real-life problems and make a change, one keystroke at a time.
                 <p id='quote'>“First, solve the problem. Then, write the code.”</p>
             </p>
-            <button id='contactMeButton'>Contact me</button>
+            {/* <button id='contactMeButton'>Contact me</button> */}
             <img src={MyPicture} id='myPicture'/>
         </div>
     )

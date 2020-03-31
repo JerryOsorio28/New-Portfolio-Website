@@ -21,7 +21,7 @@ const NavigationBar = () => {
             navBar.style.boxShadow = 'none'
         }
         
-        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350){
             let projectsTitle = document.getElementById('projectsTitle')
             projectsTitle.style.animation = 'fadeInUp 1s'
             projectsTitle.style.visibility = 'visible'
@@ -57,7 +57,7 @@ const NavigationBar = () => {
                     to='home'
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-170}
                     duration={500} 
                 >About</Link>
                 <Link 
