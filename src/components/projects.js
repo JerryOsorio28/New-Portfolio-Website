@@ -21,7 +21,7 @@ const Projects = props => {
                     </p>
                 </section>
                 <section className='projectsSections'>
-                    <a href='https://react-redux-app.jerryosorio.now.sh/' className='pictureLink'>
+                    <a href='https://amiibofinder.com' className='pictureLink'>
                         <img src={Amiibos} className='wallpapers'/>
                     </a>
                     <h3 className='projectTitle'>Amiibo's Web App</h3>

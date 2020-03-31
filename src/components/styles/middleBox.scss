@@ -1,42 +1,42 @@
+@import '../keyframes/keyframes.scss';
+
 .middleBox{
     display: flex;
     flex-direction: column;
     margin: 80px 0px;
     width: 35%;
     height: 400px;
-    // border: 1px solid red;
-
-    #myPicture{
-        position: absolute;
-        background-size: cover;
-        width: 55%;
-        z-index: 0;
-        top: 0px;
-        right: 5%;
-    }
 
     #myName{
         font-size: medium;
         text-align: left;
         margin-bottom: 0px;
         color: rgb(29,155,209);
+        animation: fadeInUp 2s;
     }
     
     #description{
+        visibility: hidden;
         text-align: left;
         margin-top: 0px;
+        animation: fadeInUp 2s;
+        animation-delay: 1s;
     }
-
+    
     #otherDescription{
+        visibility: hidden;
         margin: 0px;
         font-size: small;
+        animation: fadeInUp 2s;
+        animation-delay: 2s;
     }
-
+    
     #quote{
         font-style: italic;
     }
-
+    
     #contactMeButton{
+        visibility: hidden;
         font-family: 'Arsenal';  
         width: 100px;
         height: 100px;
@@ -46,6 +46,8 @@
         font-size: medium;
         margin-top: 15px;
         padding-bottom: 5px;
+        animation: fadeInUp 2s;
+        animation-delay: 3s;
 
         &:hover{
             background-color: rgb(29,155,209);

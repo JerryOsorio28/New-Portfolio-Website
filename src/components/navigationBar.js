@@ -20,6 +20,20 @@ const NavigationBar = () => {
             navBar.style.backgroundColor = "#333333"
             navBar.style.boxShadow = 'none'
         }
+        
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+            let projectsTitle = document.getElementById('projectsTitle')
+            projectsTitle.style.animation = 'fadeInUp 1s'
+            projectsTitle.style.visibility = 'visible'
+
+            let project1 = document.getElementsByClassName('projectsSections')[0]
+            project1.style.animation = 'fadeInUp 1s'
+            project1.style.visibility = 'visible'
+
+            let project2 = document.getElementsByClassName('projectsSections')[1]
+            project2.style.animation = 'fadeInUp 1s'
+            project2.style.visibility = 'visible'
+        }
     }
     // We invoke the 'scrollEffect' once the window object detects scrolling
     window.onscroll = function () {scrollEffect()}
@@ -43,10 +57,9 @@ const NavigationBar = () => {
                     to='home'
                     spy={true}
                     smooth={true}
-                    offset={-150}
-                    duration={500}
-                    // onClick={}
-                >Home</Link>
+                    offset={-70}
+                    duration={500} 
+                >About</Link>
                 <Link 
                     className='links'
                     activeClass='active'
@@ -56,15 +69,6 @@ const NavigationBar = () => {
                     offset={-70}
                     duration={500} 
                 >Projects</Link>
-                <Link 
-                    className='links'
-                    activeClass='active'
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500} 
-                >About</Link>
                 <Link 
                     className='links'
                     activeClass='active'

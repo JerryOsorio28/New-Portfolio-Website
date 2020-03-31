@@ -3,6 +3,22 @@ import './styles/middleBox.scss'
 import MyPicture from '../images/portfolio-picture.png'
 
 const MiddleBox = () => {
+
+    setTimeout(() => {
+        let description = document.getElementById('description')
+        description.style.visibility = 'visible'
+    }, 1400)
+
+    setTimeout(() => {
+        let otherDescription = document.getElementById('otherDescription')
+        otherDescription.style.visibility = 'visible'
+    }, 2400)
+
+    setTimeout(() => {
+        let button = document.getElementById('contactMeButton')
+        button.style.visibility = 'visible'
+    }, 3400)
+
     return (
         <div className='middleBox' id='home'>
             <h3 id='myName'>My name is Jerry Osorio Pagan</h3>
