@@ -31,10 +31,10 @@ const Contact = () => {
           </>
           : null}
         </div>
-        <a href='https://github.com/JerryOsorio28'>
+        <a href='https://github.com/JerryOsorio28' target="_blank">
           <img id = 'githubLogo' src={Github} alt=''/>
-        </a>
-        <a href='https://www.linkedin.com/in/jerryosorio/'>
+        </a >
+        <a href='https://www.linkedin.com/in/jerryosorio/' target="_blank">
           <img id = 'linkedinLogo' src={Linkedin} alt=''/>
         </a>
       </div>
