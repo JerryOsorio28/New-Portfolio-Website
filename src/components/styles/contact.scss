@@ -52,6 +52,25 @@
             }
         }
     }
+    #emailSection{
+        position: relative;
+
+        #emailCopied{
+            position: absolute;
+            left: 10px;
+            font-size: small;
+            font-weight: bold;
+            color: rgb(0,143,81);
+            text-align: center;
+        }
+        #checkmark{
+            position: absolute;
+            width: 15px;
+            left: -15px;
+            bottom: -28px;
+        }
+    }
+
     #footer{
         // width: 100%;
         display: flex;

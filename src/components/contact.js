@@ -3,6 +3,7 @@ import './styles/contact.scss'
 import Github from '../images/github.png'
 import Linkedin from '../images/linkedin.png'
 import Email from '../images/email.png'
+import CheckMark from '../images/checkmark.png'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
@@ -18,10 +19,18 @@ const Contact = () => {
       <div id='contactTitle'>CONTACT ME</div>
       <p style={{textAlign: "center"}}>If you'd like to contact me, click on any of the links below!</p>
       <div id='logos'>
-        <CopyToClipboard text={contact.value}
-          onCopy={() => setContact({...contact, copied: true})}>
-          <img id = 'emailLogo' src={Email} alt=''/>
-        </CopyToClipboard>
+        <div id='emailSection'>
+          <CopyToClipboard text={contact.value}
+            onCopy={() => setContact({...contact, copied: true})}>
+            <img id = 'emailLogo' src={Email} alt=''/>
+          </CopyToClipboard>
+          {contact.copied === true ?
+          <>
+            <img src={CheckMark} id='checkmark' />
+            <p id='emailCopied'>Email copied to clipboard!</p>
+          </>
+          : null}
+        </div>
         <a href='https://github.com/JerryOsorio28'>
           <img id = 'githubLogo' src={Github} alt=''/>
         </a>
