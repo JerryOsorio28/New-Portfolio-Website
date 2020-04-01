@@ -19,7 +19,7 @@ const Website = props => {
       </div>
         <Projects props={props}/>
         <Contact />
-        <img src={MyPicture} id='myPicture'/>
+        <img src={MyPicture} id='myPicture' alt=''/>
     </div>
   );
 }

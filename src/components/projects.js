@@ -12,7 +12,7 @@ const Projects = props => {
             <div id='projectsContainer'>
                 <section className='projectsSections'>
                     <a href='https://www.rvnav.com/' className='pictureLink'>
-                        <img src={RVWay} className='wallpapers'/>
+                        <img src={RVWay} className='wallpapers' alt=''/>
                     </a>
                     <h3 className='projectTitle'>RV Way</h3>
                     <p className='projectDescription'>
@@ -22,7 +22,7 @@ const Projects = props => {
                 </section>
                 <section className='projectsSections'>
                     <a href='https://amiibofinder.com' className='pictureLink'>
-                        <img src={Amiibos} className='wallpapers'/>
+                        <img src={Amiibos} className='wallpapers' alt=''/>
                     </a>
                     <h3 className='projectTitle'>Amiibo's Web App</h3>
                     <p className='projectDescription'>

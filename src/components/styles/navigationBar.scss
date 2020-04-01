@@ -1,3 +1,5 @@
+@import '../keyframes/keyframes.scss';
+
 .navigationBar {
     display: flex;
     align-items: center;
@@ -13,6 +15,7 @@
         width: 80px;
         height:80px;
         margin-left: 30px;
+        animation: slideRight 1s;
 
         &:hover{
             cursor: pointer;
@@ -25,6 +28,7 @@
         width: 20%;
         height: 90%;
         margin-right: 30px;
+        animation: slideLeft 1s;
 
         .links{
             display: flex;

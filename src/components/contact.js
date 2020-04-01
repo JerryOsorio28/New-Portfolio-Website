@@ -26,7 +26,7 @@ const Contact = () => {
           </CopyToClipboard>
           {contact.copied === true ?
           <>
-            <img src={CheckMark} id='checkmark' />
+            <img src={CheckMark} id='checkmark' alt=''/>
             <p id='emailCopied'>Email copied to clipboard!</p>
           </>
           : null}
