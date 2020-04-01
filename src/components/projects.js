@@ -6,27 +6,6 @@ import Amiibos from '../images/Amiibos-Web-App.png'
 import './styles/projects.scss'
 
 const Projects = props => {
-
-    // This function waits for any scroll to happen, and changes the properties for the nav bar,
-    // as well as setting back everything to it's originality when scroll is back at the top.
-    const scrollEffect = () => {
-        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
-            let projectsTitle = document.getElementById('projectsTitle')
-            projectsTitle.style.animation = 'fadeInUp 1s'
-            projectsTitle.style.visibility = 'visible'
-
-            let project1 = document.getElementsByClassName('projectsSections')[0]
-            project1.style.animation = 'fadeInUp 1s'
-            project1.style.visibility = 'visible'
-
-            let project2 = document.getElementsByClassName('projectsSections')[1]
-            project2.style.animation = 'fadeInUp 1s'
-            project2.style.visibility = 'visible'
-        }
-    }
-    // We invoke the 'scrollEffect' once the window object detects scrolling
-    window.onscroll = function () {scrollEffect()}
-
     return (
         <>
             <div id='projectsTitle'>PROJECTS</div>
