@@ -47,7 +47,7 @@ const NavigationBar = () => {
                 to='home'
                 spy={true}
                 smooth={true}
-                offset={-150}
+                offset={-170}
                 duration={500}
             ><img src={Logo} id='logo'/></Link>
             <div className='linksContainer'>
@@ -75,7 +75,7 @@ const NavigationBar = () => {
                     to='home'
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={900}
                     duration={500} 
                 >Contact</Link>
             </div>
